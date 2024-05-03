@@ -196,8 +196,6 @@ address a {
 }
 
 
-
-
 .pf_block {
 	width: calc((100% - 48px) / 3);
 	transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1)
