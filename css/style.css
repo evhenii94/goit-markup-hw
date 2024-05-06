@@ -61,7 +61,7 @@ header .container {
 	border-radius: 2px;
 
 }
-address a {
+.contacts_links {
 	font-style: normal;
 	color: #434455;
 }
