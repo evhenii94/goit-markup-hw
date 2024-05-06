@@ -47,6 +47,34 @@ body {
 .order_block {
 	background-color: #2e2f42 ;
 }
+.order_block_text {
+	font-size: 56px;
+	font-weight: 700;
+	color: #FFFFFF;
+	letter-spacing: 0.02em;
+	line-height: 1.07;
+	text-align: center;
+}
+.order_button {
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 16px 32px;
+	background-color: #4D5AE5;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: Roboto, sans-serif;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+}
+.order_button:hover {
+	background-color: #404BBF;
+}
+.order_button:focus {
+	background-color: #404BBF;
+}
+
+
+
 
 
 .footer {
