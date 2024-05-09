@@ -171,10 +171,10 @@ body {
 	padding: 24px 100px;
 	border: 1px solid #8E8F99 ;
 	margin-bottom: 8px;
-}
-.icon_adv {
-	width: 64px;
-	height: 64px;
+	justify-content: center; 
+	background-color: #f4f4fd; 
+	border-radius: 4px;
+	height: 112px;
 }
 .adv_head {
 	font-weight: 500;
