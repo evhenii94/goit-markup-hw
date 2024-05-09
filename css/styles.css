@@ -92,7 +92,6 @@ body {
 .contacts_links_block {
 	display: flex;
 	gap: 40px;
-	
 }
 .contact_links {
 	display: block;
@@ -113,14 +112,13 @@ body {
 
 .order_block {
 	padding: 188px 0;
-	background-image: linear-gradient(
-	to bottom, 
-	rgba(46, 47, 66, 0.7), 
-	rgba(46, 47, 66, 0.7)
-	),
-	url(../images/people-office.jpg);
+	background-image: linear-gradient(to bottom,rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
+}
+.order_block section{
+	max-width: 1440px;
 }
 .order_block_text {
 	margin: 0 auto 48px auto;
@@ -148,6 +146,7 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 	margin: 0 auto;
+	background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order_button:hover {
 	background-color: #404bbf;
