@@ -116,10 +116,10 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-}
-.order_block .container {
 	max-width: 1440px;
+	margin: 0 auto;
 }
+
 .order_block_text {
 	margin: 0 auto 48px auto;
 	max-width: 496px;
