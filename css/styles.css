@@ -8,6 +8,10 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
+.section {
+	padding: 120px 0;
+}
 .visually-hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
@@ -266,10 +270,6 @@ body {
 
 
 
-
-.portfolio_block {
-	padding: 120px 0;
-}
 .portfolio_head {
 	font-size: 36px;
 	line-height: 1.11;
@@ -298,7 +298,7 @@ body {
 	position: relative;
 	overflow: hidden;
 }
-.image_with_overlay:hover .overlay_text {
+.pf_block:hover .overlay_text {
 	transform: translateY(0%);
 }
 .overlay_text {
