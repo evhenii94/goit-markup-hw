@@ -159,9 +159,8 @@ body {
 	background-color: #404bbf;
 }
 
-.advantages {
-	padding: 120px 0;
-}
+
+
 .adv_list_block {
 	display: flex;
 	gap: 24px;
@@ -195,6 +194,10 @@ body {
 	letter-spacing: 0.02em;
 	color: #434455;
 }
+
+
+
+
 
 .our_team {
 	background-color: #f4f4fd;
