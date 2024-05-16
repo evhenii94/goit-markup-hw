@@ -482,7 +482,6 @@ footer .container {
 .subscribe_area {
 	display: flex;
 	gap: 24px;
-
 }
 
 .subscribe_text_area {
@@ -498,6 +497,10 @@ footer .container {
 	letter-spacing: 0.04em;
 	padding-left: 16px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.footer_input {
+	display: flex;
+	gap: 24px;
 }
 
 .subscribe_text_area::placeholder {
