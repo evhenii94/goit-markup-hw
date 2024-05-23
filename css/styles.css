@@ -1,17 +1,11 @@
-
 body {
 	font-family: "Roboto", sans-serif;
 	color: #434455;
 	background-color: #ffffff;
 }
-.container {
-	width: 1158px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
 
 .section {
-	padding: 120px 0;
+	padding: 96px 0;
 }
 
 .visually-hidden {
@@ -24,7 +18,45 @@ body {
 	width: 1px;
 }
 
-/* ------------ ------------ */
+.container {
+	max-width: 320px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ---------VIEW PORT TABLET--------- */
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+
+	.section {
+		padding: 96px 0;
+	}
+}
+
+/* ---------VIEW PORT TABLET--------- */
+
+/* ---------VIEW PORT DESCTOP--------- */
+
+@media screen and (min-width: 1158px) {
+	.container {
+		max-width: 1158px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.section {
+		padding: 120px 0;
+	}
+}
+
+/* ---------VIEW PORT DESCTOP--------- */
+
+/* ----------- ------------ */
 
 /* ------------HEADER------------ */
 
@@ -135,11 +167,18 @@ body {
 	color: #404bbf;
 }
 
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1158px) {
+}
+
 /* ------------HEADER------------ */
 
 /* ------------ORDER BLOCK------------ */
 
 .order_block {
+	display: flex;
 	padding: 188px 0;
 	background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 		url(../images/people-office.jpg);
@@ -148,17 +187,19 @@ body {
 	background-position: center;
 	max-width: 1440px;
 	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
 }
 
 .order_block_text {
-	margin: 0 auto 48px auto;
+	margin: 0 auto;
 	max-width: 496px;
 	font-size: 56px;
 	font-weight: 700;
 	color: #ffffff;
 	letter-spacing: 0.02em;
 	line-height: 1.07;
-	text-align: center;
+	padding-bottom: 72px;
 }
 
 .order_button {
@@ -185,6 +226,12 @@ body {
 
 .order_button:focus {
 	background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1158px) {
 }
 
 /* ------------ORDER BLOCK------------ */
@@ -222,6 +269,12 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1158px) {
 }
 
 /* ------------ADVENTEGE------------ */
@@ -308,6 +361,12 @@ body {
 	fill: #f4f4fd;
 }
 
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1158px) {
+}
+
 /* ------------TEAM BLOCK------------ */
 
 /* ------------PORTFOLIO------------ */
@@ -388,6 +447,12 @@ body {
 	letter-spacing: 0.02em;
 	line-height: 1.5;
 	color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1158px) {
 }
 
 /* ------------------------------------ */
@@ -534,11 +599,18 @@ footer .container {
 	margin-left: 16px;
 }
 
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1158px) {
+}
+
 /* ------------FOOTER------------ */
 
 /* ------------OVERLAY------------ */
 
 .modal_overlay {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -607,10 +679,13 @@ footer .container {
 	margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1158px) {
+}
+
 /* ------------OVERLAY------------ */
-
-/* ------------OVERLAY FORM------------ */
-
 
 .modal_form {
 	margin-bottom: 8px;
@@ -656,12 +731,11 @@ footer .container {
 	fill: #4d5ae5;
 }
 
+@media screen and (min-width: 768px) {
+}
 
-
-/* ------------OVERLAY FORM------------ */
-
-/* ------------OVERLAY comment------------ */
-
+@media screen and (min-width: 1158px) {
+}
 
 .modal_comment {
 	margin-bottom: 16px;
@@ -678,7 +752,7 @@ footer .container {
 	border-radius: 4px;
 	padding: 8px 16px;
 	outline: transparent;
-	background-color: transparent; 
+	background-color: transparent;
 	resize: none;
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -686,14 +760,6 @@ footer .container {
 .form_comment:focus {
 	border-color: #4d5ae5;
 }
-
-
-/* ------------OVERLAY comment------------ */
-
-
-/* ------------OVERLAY CHECKBOX------------ */
-
-
 
 .modal_privacy {
 	margin-bottom: 24px;
@@ -711,31 +777,26 @@ footer .container {
 	height: 16px;
 	border: 1px solid rgba(46, 47, 66, 0.4);
 	border-radius: 2px;
-	transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	display: inline-flex; 
-	align-items: center; 
-	justify-content: center; 
-	fill: transparent; 
+	transition:
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	fill: transparent;
 }
 
 input[type="checkbox"]:checked + .form_checkbox > .privacy_policy_checkbox {
 	background-color: #404bbf;
 	border: none;
-	fill: #F4F4FD;
+	fill: #f4f4fd;
 }
 
 .privacy_policy_link {
 	text-decoration: underline;
-	color: #4D5AE5;
+	color: #4d5ae5;
 }
-
-
-
-/* ------------OVERLAY CHECKBOX------------ */
-
-
-/* ------------OVERLAY FOTTER BUTTON------------ */
-
 
 .modal_form_btn {
 	margin: 0 auto;
@@ -749,9 +810,14 @@ input[type="checkbox"]:checked + .form_checkbox > .privacy_policy_checkbox {
 	letter-spacing: 0.04em;
 	color: #ffffff;
 	cursor: pointer;
-	background-color: #4D5AE5;
+	background-color: #4d5ae5;
 	border: none;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ------------OVERLAY FOTTER BUTTON------------ */
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1158px) {
+}
+/* ------------OVERLAY------------ */

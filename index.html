@@ -19,8 +19,8 @@
 				<a class="logo_head" href="./index.html">Web<span class="header_logo_color">Studio</span></a>
 				<ul class="menu">
 					<li><a class="menu_links active" href="./index.html">Studio</a></li>
-					<li><a class="menu_links" href="">Portfolio</a></li>
-					<li><a class="menu_links" href="">Contacts</a></li>
+					<li><a class="menu_links" href="#portfolio">Portfolio</a></li>
+					<li><a class="menu_links" href="#contacts">Contacts</a></li>
 				</ul>
 			</nav>
 			<address class="contacts_block">
@@ -81,7 +81,7 @@
 						<h3 class="adv_head">Technologies</h3>
 						<p class="adv_text">Design practice focused on digital experiences. We bring forth a deep passion for
 							problem-solving. </p>
-					</li>
+					</li>	
 				</ul>
 			</div>
 		</section> <!--/Advantages Block-->
@@ -240,7 +240,7 @@
 				</ul>
 			</div>
 		</section>				<!--OUR_Team Block-->
-		<section class="portfolio_block section"> <!--Portfolio Block-->
+		<section id="portfolio" class="portfolio_block section"> <!--Portfolio Block-->
 			<div class="container">
 				<h2 class="portfolio_head">Our Portfolio</h2>
 				<ul class="pf_block_wrapper">
@@ -308,7 +308,7 @@
 			</div>
 		</section> <!--Portfolio Block-->
 	</main>
-	<footer class="footer"> <!--Footer-->
+	<footer id="contacts" class="footer"> <!--Footer-->
 		<div class="container">
 			<div class="footer_block">
 				<a class="logo_footer" href="./index.html">Web<span class="logo_footer_color">Studio</span></a>
@@ -419,5 +419,24 @@
 			</form>
 		</div>
 	</div>
+	<script>
+		let orderButton = document.querySelector('.order_button');
+		let modalOverlay = document.querySelector('.modal_overlay');
+		let modalBtn = document.querySelector('.modal_btn');
+
+		orderButton.onclick = function() {
+			modalOverlay.style.display = 'block';
+		} 
+
+		modalBtn.onclick = function() {
+			modalOverlay.style.display = 'none';
+		} 
+
+		window.onclick = function(event) {
+			if (event.target === modalOverlay) {
+				modalOverlay.style.display = 'none';
+			}
+		}
+	</script>
 </body>
 </html>
