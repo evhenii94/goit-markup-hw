@@ -26,41 +26,16 @@ body {
 	margin-right: auto;
 }
 
-/* ---------VIEW PORT TABLET--------- */
-
-@media screen and (min-width: 768px) {
-	.container {
-		max-width: 768px;
-	}
-
-	.section {
-		padding: 96px 0;
-	}
-}
-
-/* ---------VIEW PORT TABLET--------- */
-
-/* ---------VIEW PORT DESCTOP--------- */
-
-@media screen and (min-width: 1158px) {
-	.container {
-		max-width: 1158px;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-
-	.section {
-		padding: 120px 0;
-	}
-}
-
-/* ---------VIEW PORT DESCTOP--------- */
 
 /* ----------- ------------ */
 
 /* ------------HEADER------------ */
 
 .header {
+	position: fixed;
+	width: 100%;
+	background-color: #E7E9FC;
+	z-index: 10;
 	border-bottom: 1px solid #e7e9fc;
 	box-shadow:
 		0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -68,7 +43,7 @@ body {
 		0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.header_wrapper {
+.menu_wrap {
 	display: flex;
 	justify-content: space-between;
 }
@@ -76,6 +51,49 @@ body {
 .navigation {
 	display: flex;
 	align-items: center;
+}
+
+.burger_checkbox {
+	display: none;
+}
+
+.burger_checkbox ~ label svg:nth-child(2) {
+	display: none;
+}
+
+.burger_checkbox:checked ~ label svg:nth-child(1) {
+	display: none;
+}
+
+.burger_checkbox:checked ~ label .cansel-icon-menu {
+	display: flex;
+}
+
+.menu-icon {
+		position: absolute;
+	top: 24px;
+	right: 24px;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.cansel-icon-menu {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	background-color: #e7e9fc;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 7px;
+	cursor: pointer;
+	transition:
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo_head {
@@ -93,11 +111,6 @@ body {
 	color: #2e2f42;
 }
 
-.menu {
-	display: flex;
-	gap: 40px;
-}
-
 .menu_links {
 	display: block;
 	position: relative;
@@ -109,17 +122,7 @@ body {
 	color: #2e2f42;
 }
 
-.active {
-	display: block;
-	position: relative;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-	padding: 24px 0;
-	color: #404bbf;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .active::after {
 	content: "";
@@ -144,10 +147,7 @@ body {
 	font-style: normal;
 }
 
-.contacts_links_block {
-	display: flex;
-	gap: 40px;
-}
+
 
 .contact_links {
 	display: block;
@@ -167,11 +167,73 @@ body {
 	color: #404bbf;
 }
 
+
+/* ---------------MEDIA TABLET--------------- */
+
+
 @media screen and (min-width: 768px) {
+
+	.container {
+		max-width: 768px;
+	}
+
+	.section {
+		padding: 96px 0;
+	}
+
+.menu {
+	display: flex;
+	gap: 24px;
 }
 
-@media screen and (min-width: 1158px) {
+.burger {
+	display: none;
 }
+
+.active {
+	display: block;
+	position: relative;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	padding: 24px 0;
+	color: #404bbf;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu_links {
+
+}
+}
+
+
+/* ---------------MEDIA TABLET--------------- */
+
+
+/* ---------------MEDIA DESKTOP--------------- */
+
+@media screen and (min-width: 1158px) {
+
+	.contacts_links_block {
+	display: flex;
+	gap: 40px;
+}
+
+	.container {
+		max-width: 1158px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.section {
+		padding: 120px 0;
+	}
+
+}
+
+/* ---------------MEDIA DESCTOP--------------- */
+
 
 /* ------------HEADER------------ */
 
@@ -623,7 +685,7 @@ footer .container {
 }
 
 .modal {
-	position: absolute;
+		position: relative;
 	background: #fcfcfc;
 	border-radius: 4px;
 	top: 50%;
@@ -679,14 +741,6 @@ footer .container {
 	margin-bottom: 16px;
 }
 
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1158px) {
-}
-
-/* ------------OVERLAY------------ */
-
 .modal_form {
 	margin-bottom: 8px;
 }
@@ -729,12 +783,6 @@ footer .container {
 }
 .modal_input:focus + .modal_input_icon {
 	fill: #4d5ae5;
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1158px) {
 }
 
 .modal_comment {
