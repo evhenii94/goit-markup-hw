@@ -37,7 +37,7 @@ img {
 
 .header {
 	display: flex;
-	justify-content: space-between;
+	width: 100%;
 	background-color: #ffffff;
 	border-bottom: 1px solid #e7e9fc;
 	box-shadow:
@@ -51,20 +51,15 @@ img {
 	align-items: center;
 }
 
-.burger {
-	position: relative;
-	left: 370px;
-	z-index: 1;
-	cursor: pointer;
-	display: block;
-	background: transparent;
-	width: 40px;
-	height: 26px;
+.header_social_media_block {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
 }
 
 .burger_checkbox {
 	position: absolute;
-  visibility: hidden;	
+	visibility: hidden;
 }
 
 .burger_checkbox ~ label svg:nth-child(2) {
@@ -79,8 +74,60 @@ img {
 	display: flex;
 }
 
-.burger_checkbox:checked ~ .menu {
-  transform: translateX(0);
+.burger_checkbox:checked ~ address .menu2,
+.burger_checkbox:checked ~ .menu ,
+.burger_checkbox:checked ~ .header_social_media_block .menu3_social_media {
+	transform: translateX(0);
+}
+
+.menu {
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 42px 0;
+	margin: 0;
+	background-color: #ffffff;
+	transform: translateX(-100%);
+	transition: 0.3s;
+	width: 100%;
+}
+
+.menu2 {
+	display: flex;
+	top: 210px;
+	left: 0;
+	position: absolute;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 42px 0;
+	margin: 0;
+	background-color: #ffffff;
+	transform: translateX(-100%);
+	transition: 0.3s;
+	width: 100%;
+}
+
+.menu3_social_media {
+	display: flex;
+	top: 290px;
+	left: 0;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 42px 0;
+	margin: 0;
+	background-color: #ffffff;
+	transform: translateX(-100%);
+	transition: 0.3s;
+	width: 100%;
 }
 
 .cansel-icon-menu {
@@ -96,6 +143,18 @@ img {
 	transition:
 		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger {
+	position: relative;
+	z-index: 1;
+	display: block;
+	position: relative;
+	border: none;
+	background: transparent;
+	width: 40px;
+	height: 26px;
+	left: 100px;
 }
 
 .logo_head {
@@ -116,23 +175,10 @@ img {
 	color: #2e2f42;
 }
 
-.menu {
-  top: 0;
-  left: 0;
-  position: absolute;
-  gap: 12px;
-  padding: 42px 0;
-  margin: 0;
-  background-color: #fff;
-  transform: translateX(-100%);
-  transition: .3s;
-  width: 100%;
-}
-
 .menu_links {
 	display: block;
 	padding: 8px;
-	color: #2E2F42;
+	color: #2e2f42;
 	font-size: 18px;
 	text-align: center;
 }
@@ -144,16 +190,6 @@ img {
 
 .contacts_block {
 	font-style: normal;
-	position: absolute;
-	top: 100px;
-}
-
-.contact_links {
-	font-size: 20px;
-	line-height: 1.2;
-	letter-spacing: 0.02em;
-	color: #434455;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact_links:hover,
@@ -171,6 +207,7 @@ img {
 
 	.menu_wrap {
 		display: flex;
+		width: 100%;
 		justify-content: space-between;
 	}
 
@@ -200,12 +237,6 @@ img {
 	}
 
 	.menu_links {
-	}
-	nav ul li {
-		width: 100%;
-	}
-
-	.menu_links {
 		display: block;
 		position: relative;
 		padding: 24px 0;
@@ -229,6 +260,7 @@ img {
 
 	.contact_second {
 		padding-bottom: 16px;
+		padding-top: 0;
 	}
 
 	.contact_links {
@@ -245,12 +277,24 @@ img {
 		margin-right: 122px;
 	}
 
+	.contact_links {
+		display: block;
+		top: 100px;
+		padding-bottom: 24px;
+		padding-top: 24px;
+		font-size: 20px;
+		line-height: 1.2;
+		letter-spacing: 0.02em;
+		color: #434455;
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
 	/* ---------------MEDIA TABLET HEADER--------------- */
 
 	/* ---------------MEDIA DESKTOP HEADER--------------- */
 
 	@media screen and (min-width: 1158px) {
-		.contacts_links_block {
+		.menu2 {
 			display: flex;
 			gap: 40px;
 		}
@@ -284,10 +328,9 @@ img {
 
 	.order_block {
 		display: flex;
-		padding: 188px 0;
 		background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg.jpg);
 		background-size: cover;
-		background-repeat: no-repeat;
+
 		background-position: center;
 		max-width: 1440px;
 		margin: 0 auto;
@@ -334,7 +377,25 @@ img {
 
 	/* ------------ORDER BLOCK------------ */
 
-	/* ------------ADVENTEGE------------ */
+	/* ---------------MEDIA TABLET ORDER BLOCK---------------- */
+
+	@media screen and (min-width: 768px) {
+		.order_block {
+			padding: 188px 0;
+			max-width: 1440px;
+		}
+	}
+
+	/* ---------------MEDIA TABLET ORDER BLOCK---------------- */
+
+	/* ---------------MEDIA DESCTOP ORDER BLOCK---------------- */
+
+	@media screen and (min-width: 1158px) {
+	}
+
+	/* ---------------MEDIA DESCTOP ORDER BLOCK---------------- */
+
+	/* ------------ADVENTEGE ORDER BLOCK------------- */
 
 	.icon_block {
 		display: none;
