@@ -15,6 +15,7 @@
 <body>
 	<header class="header"> <!-- HEADER-->
 		<div class="container menu_wrap">
+			
 			<nav class="navigation">
 				<a class="logo_head" href="./index.html">Web<span class="header_logo_color">Studio</span></a>
 				<input type="checkbox" id="burger_checkbox" class="burger_checkbox">
@@ -26,7 +27,8 @@
 						<use href="./images/icons.svg#icon-menu_close"></use>
 					</svg>
 				</label>
-				<ul class="menu">
+				
+				<ul class="menu mobile_menu">
 					<li><a class="menu_links active" href="./index.html">Studio</a></li>
 					<li><a class="menu_links" href="#portfolio">Portfolio</a></li>
 					<li><a class="menu_links" href="#contacts">Contacts</a></li>
@@ -34,8 +36,8 @@
 			</nav>
 			<address class="contacts_block">
 				<ul class="contacts_links_block">
-					<li><a class="contact_links" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-					<li><a class="contact_links" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+					<li><a class="contact_links contact_first" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+					<li><a class="contact_links contact_second" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
 				</ul>
 			</address>
 		</div>
@@ -95,11 +97,11 @@
 			</div>
 		</section> <!--/Advantages Block-->
 		<section class="our_team section">				<!--OUR_Team Block-->
-			<div class="container">
+			<div class="container team_container">
 				<h2 class="our_team_head">Our Team</h2>
 				<ul class="our_team_wrapper">
 					<li class="team_block">
-						<img src="./images/team_card1.jpg" alt="team_foto">
+						<img src="./images/mark.jpg" alt="Marks photo" class="team_photo">
 						<div class="team_info_block">
 							<h3 class="team_info_head">Mark Guerrero</h3>
 							<p class="team_info_text">Product Designer</p>
@@ -136,7 +138,7 @@
 						</div>
 					</li>
 					<li class="team_block">
-						<img src="./images/team_card3.jpg" alt="team_foto">
+						<img src="./images/tom.jpg" alt="Toms photo" class="team_photo">
 						<div class="team_info_block">
 							<h3 class="team_info_head">Tom Ford</h3>
 							<p class="team_info_text">Frontend Developer</p>
@@ -173,9 +175,9 @@
 						</div>
 					</li>
 					<li class="team_block">
-						<img src="./images/team_card4.jpg" alt="team_foto">
+						<img src="./images/camila.jpg" alt="Camila photo" class="team_photo">
 						<div class="team_info_block">
-							<h3 class="team_info_head">Camila Garcia </h3>
+							<h3 class="team_info_head">Camilas Garcia </h3>
 							<p class="team_info_text">Marketing</p>
 							<ul class="social_media_block">
 								<li class="social_media">
@@ -210,9 +212,9 @@
 						</div>
 					</li>
 					<li class="team_block">
-						<img src="./images/team_card2.jpg" alt="team_foto">
+						<img src="./images/daniel.jpg" alt="Daniel phopo" class="team_photo">
 						<div class="team_info_block">
-							<h3 class="team_info_head">Daniel Wilson</h3>
+							<h3 class="team_info_head">Daniels Wilson</h3>
 							<p class="team_info_text">UI Designer</p>
 							<ul class="social_media_block">
 								<li class="social_media">
@@ -255,7 +257,7 @@
 				<ul class="pf_block_wrapper">
 					<li class="pf_block">
 						<div class="image_with_overlay">
-							<img src="./images/pf_1.jpg" alt="themplate_app">
+							<img src="./images/bankingapp .jpg" alt="themplate_app">
 								<p class="overlay_text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App </p>
 						</div>
 						<div class="pf_block_info">
@@ -265,7 +267,7 @@
 					</li>
 					<li class="pf_block">
 						<div class="image_with_overlay">
-							<img src="./images/pf_2.jpg" alt="$">
+							<img src="./images/cashlesspayment.jpg" alt="$">
 								<p class="overlay_text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
 						</div>
 						<div class="pf_block_info">
@@ -275,7 +277,7 @@
 					</li>
 					<li class="pf_block">
 						<div class="image_with_overlay">
-							<img src="./images/pf_3.jpg" alt="photo">
+							<img src="./images/meditationapp.jpg" alt="photo">
 								<p class="overlay_text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App </p>
 						</div>
 						<div class="pf_block_info">
@@ -285,7 +287,7 @@
 					</li>
 					<li class="pf_block">
 						<div class="image_with_overlay">
-							<img src="./images/pf_4.jpg" alt="$">
+							<img src="./images/taxiservice.jpg" alt="$">
 								<p class="overlay_text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App </p>
 						</div>
 						<div class="pf_block_info">
@@ -295,7 +297,7 @@
 					</li>
 					<li class="pf_block">
 						<div class="image_with_overlay">
-							<img src="./images/pf_5.jpg" alt="$">
+							<img src="./images/screenillustrations.jpg" alt="$">
 								<p class="overlay_text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App </p>
 						</div>
 						<div class="pf_block_info">
@@ -305,7 +307,7 @@
 					</li>
 					<li class="pf_block">
 						<div class="image_with_overlay">
-							<img src="./images/pf_6.jpg" alt="#">
+							<img src="./images/onlinecourses.jpg" alt="#">
 							<p class="overlay_text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App </p>
 						</div>
 						<div class="pf_block_info">
@@ -318,7 +320,7 @@
 		</section> <!--Portfolio Block-->
 	</main>
 	<footer id="contacts" class="footer"> <!--Footer-->
-		<div class="container">
+		<div class="container footer_container">
 			<div class="footer_block">
 				<a class="logo_footer" href="./index.html">Web<span class="logo_footer_color">Studio</span></a>
 				<p class="footer_text">Increase the flow of customers and sales for your business with digital marketing & growth
