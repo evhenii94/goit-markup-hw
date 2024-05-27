@@ -12,21 +12,17 @@
 		<link	href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"	rel="stylesheet"/>
 		<link	href="https://fonts.googleapis.com/css?family=Raleway:700"	rel="stylesheet"/>
 	</head>
-	<body>
+	<body class="body">
 		<header class="header">
 			<!-- HEADER-->
 			<div class="container menu_wrap">
 				<nav class="navigation">
 					<a	class="logo_head"	href="./index.html"	>Web<span class="header_logo_color">Studio</span></a>
-					<input	type="checkbox"	id="burger_checkbox"	class="burger_checkbox"/>
-					<label	for="burger_checkbox"	class="burger">
+					<button	type="button"	class="burger">
 						<svg	class="menu-icon"	width="24"	height="24">
 							<use href="./images/icons.svg#icon-menu"></use>
 						</svg>
-						<svg	class="cansel-icon-menu"	width="8"	height="8">
-							<use href="./images/icons.svg#icon-cansel"></use>
-						</svg>
-					</label>
+					</button>
 					<ul class="menu">
 						<li><a	class="menu_links active"	href="./index.html"	>Studio</a></li>
 						<li><a	class="menu_links"	href="#portfolio"	>Portfolio</a></li>
@@ -269,7 +265,7 @@
 			<!--OUR_Team Block-->
 			<section	id="portfolio"	class="portfolio_block section">
 				<!--Portfolio Block-->
-				<div class="container">
+				<div class="container portfolio_container">
 					<h2 class="portfolio_head">Our Portfolio</h2>
 					<ul class="pf_block_wrapper">
 						<li class="pf_block">
@@ -440,7 +436,7 @@
 		</footer>
 
 		<div class="modal_overlay">
-			<div class="modal">
+			<div class="modal-container container">
 				<button	class="modal_btn"	type="button">
 					<svg	class="cansel-icon"	width="8"	height="8">
 						<use href="./images/icons.svg#icon-cansel"></use>
@@ -536,6 +532,11 @@
 
 		<div class="modal_mobile_menu">
 			<div class="container modal_menu_container">
+				<button	class="modal_cansel_btn"	type="button">
+					<svg	class="cansel-icon"	width="8"	height="8">
+						<use href="./images/icons.svg#icon-cansel"></use>
+					</svg>
+				</button>
 				<ul class="mobile_menu">
 					<li><a class="mobile_menu_links"	href="./index.html">Studio</a></li>
 					<li><a class="mobile_menu_links" href="#portfolio" >Portfolio</a></li>
@@ -548,7 +549,7 @@
 					</ul>
 				</address>
 				<div class="social_media_menu_block">
-					<ul class="menu_social_media">
+					<ul class="modal_menu_social_media">
 						<li class="social_media">
 							<a	href="https://www.instagram.com/"	class="social_media_link"	target="_blank">
 								<svg	width="24"	height="24"	class="sm_img">
@@ -585,9 +586,13 @@
 			let orderButton = document.querySelector(".order_button");
 			let modalOverlay = document.querySelector(".modal_overlay");
 			let modalBtn = document.querySelector(".modal_btn");
+			let body = document.querySelector(".body");
+			
 
 			orderButton.onclick = function () {
 				modalOverlay.style.display = "block";
+
+				
 			};
 
 			modalBtn.onclick = function () {
@@ -599,6 +604,28 @@
 					modalOverlay.style.display = "none";
 				}
 			};
+
+			let burger = document.querySelector(".burger");
+			let modalMobileMenu = document.querySelector(".modal_mobile_menu");
+			let modalCanselBtn = document.querySelector(".modal_cansel_btn");
+
+				burger.onclick = function () {
+				modalMobileMenu.style.display = "block";
+			};
+
+			modalCanselBtn.onclick = function () {
+				modalMobileMenu.style.display = "none";
+			};
+
+			window.onclick = function (event) {
+				if (event.target === modalOverlay) {
+					modalOverlay.style.display = "none";
+					
+				}
+			};
+
+		
+
 		</script>
 	</body>
 </html>
