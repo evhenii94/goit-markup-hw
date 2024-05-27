@@ -1076,7 +1076,7 @@ input[type="checkbox"]:checked + .form_checkbox > .privacy_policy_checkbox {
 	display: none;
 	position: absolute;
 	top: 0%;
-	left: 38%;
+	left:20%;
 	padding: 72px 16px;
 	background-color: white;
 	transition:
@@ -1096,7 +1096,7 @@ input[type="checkbox"]:checked + .form_checkbox > .privacy_policy_checkbox {
 .modal_cansel_btn {
 	position: absolute;
 	top: -50px;
-	right: 33px;
+	right: 18px;
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
