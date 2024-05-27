@@ -47,7 +47,8 @@ img {
 
 /* ---------------HEADER--------------- */
 
-.header {
+
+.menu_wrap {
 	background-color: #ffffff;
 	border-bottom: 1px solid #e7e9fc;
 	box-shadow:
@@ -866,11 +867,11 @@ img {
 
 .modal-container {
 	position: fixed;
-	top: 35%;
-	left: 50%;
+	top: 4%;
+	left: 30.5%;
 	background: #fcfcfc;
 	border-radius: 4px;
-	transform: translate(-50%, -50%);
+	
 	width: 288px;
 	min-height: 584px;
 	box-shadow:
@@ -1047,8 +1048,8 @@ input[type="checkbox"]:checked + .form_checkbox > .privacy_policy_checkbox {
 
 @media screen and (min-width: 768px) {
 	.modal-container {
-		top: 35%;
-		left: 20%;
+		top: 15%;
+		left: 30%;
 		height: 40%;
 		width: 45%;
 	}
@@ -1060,8 +1061,8 @@ input[type="checkbox"]:checked + .form_checkbox > .privacy_policy_checkbox {
 
 @media screen and (min-width: 1158px) {
 	.modal-container {
-	top: 55%;
-	left: 15%;
+	top: 12%;
+	left: 35%;
 	width: 408px;
 }
 }
