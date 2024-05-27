@@ -2,6 +2,7 @@ body {
 	font-family: "Roboto", sans-serif;
 	color: #434455;
 	background-color: #ffffff;
+
 }
 
 a {
@@ -47,14 +48,15 @@ img {
 
 /* ---------------HEADER--------------- */
 
-
-.menu_wrap {
-	background-color: #ffffff;
-	border-bottom: 1px solid #e7e9fc;
-	box-shadow:
+.header {
+		box-shadow:
 		0px 2px 1px rgba(46, 47, 66, 0.08),
 		0px 1px 1px rgba(46, 47, 66, 0.16),
 		0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.menu_wrap {
+	background-color: #ffffff;
+	border-bottom: 1px solid #e7e9fc;
 }
 
 .navigation {
@@ -855,6 +857,7 @@ img {
 .modal_overlay {
 	display: none;
 	position: absolute;
+	overflow-y: visible;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -868,7 +871,7 @@ img {
 .modal-container {
 	position: fixed;
 	top: 4%;
-	left: 30.5%;
+	left: 17%;
 	background: #fcfcfc;
 	border-radius: 4px;
 	
@@ -1048,7 +1051,7 @@ input[type="checkbox"]:checked + .form_checkbox > .privacy_policy_checkbox {
 
 @media screen and (min-width: 768px) {
 	.modal-container {
-		top: 15%;
+		top: 4%;
 		left: 30%;
 		height: 40%;
 		width: 45%;
