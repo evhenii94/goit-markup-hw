@@ -2,7 +2,6 @@ body {
 	font-family: "Roboto", sans-serif;
 	color: #434455;
 	background-color: #ffffff;
-
 }
 
 a {
@@ -49,7 +48,7 @@ img {
 /* ---------------HEADER--------------- */
 
 .header {
-		box-shadow:
+	box-shadow:
 		0px 2px 1px rgba(46, 47, 66, 0.08),
 		0px 1px 1px rgba(46, 47, 66, 0.16),
 		0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -398,7 +397,6 @@ img {
 		display: flex;
 		flex-wrap: nowrap;
 		gap: 24px;
-		
 	}
 
 	.adv_head {
@@ -528,8 +526,7 @@ img {
 /* ------------MEDIA DESCTOP TEAM BLOCK------------ */
 
 @media screen and (min-width: 1158px) {
-
-		.team_block {
+	.team_block {
 		width: calc((100% - 72px) / 4);
 	}
 
@@ -541,9 +538,7 @@ img {
 		gap: 24px;
 		flex-direction: row;
 	}
-
 }
-
 
 /* ------------MEDIA DESCTOP TEAM BLOCK------------ */
 
@@ -624,7 +619,7 @@ img {
 /* ------------MEDIA DESCTOP PORTFOLIO BLOCK------------ */
 
 @media screen and (min-width: 1158px) {
-		.pf_block_wrapper {
+	.pf_block_wrapper {
 		row-gap: 48px;
 	}
 
@@ -633,17 +628,17 @@ img {
 	}
 
 	.pf_block:hover {
-	box-shadow:
-		0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-		0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-		0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-	cursor: pointer;
-	transform: translateY(0%);
-}
+		box-shadow:
+			0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+			0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+			0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+		cursor: pointer;
+		transform: translateY(0%);
+	}
 
-.pf_block:hover .overlay_text {
-	transform: translateY(0%);
-}
+	.pf_block:hover .overlay_text {
+		transform: translateY(0%);
+	}
 
 	.image_with_overlay {
 		position: relative;
@@ -833,7 +828,7 @@ img {
 /* ------------MEDIA DESCTOP FOOTER BLOCK------------ */
 
 @media screen and (min-width: 1158px) {
-		.footer_container {
+	.footer_container {
 		flex-direction: row;
 		flex-wrap: wrap;
 		gap: 0;
@@ -871,10 +866,11 @@ img {
 .modal-container {
 	position: fixed;
 	top: 4%;
-	left: 17%;
+	left: 0%;
+	right: 0;
 	background: #fcfcfc;
 	border-radius: 4px;
-	
+
 	width: 288px;
 	min-height: 584px;
 	box-shadow:
@@ -1051,8 +1047,9 @@ input[type="checkbox"]:checked + .form_checkbox > .privacy_policy_checkbox {
 
 @media screen and (min-width: 768px) {
 	.modal-container {
-		top: 4%;
-		left: 30%;
+		top: 2%;
+		left: 0%;
+		right: 0;
 		height: 40%;
 		width: 45%;
 	}
@@ -1064,10 +1061,11 @@ input[type="checkbox"]:checked + .form_checkbox > .privacy_policy_checkbox {
 
 @media screen and (min-width: 1158px) {
 	.modal-container {
-	top: 12%;
-	left: 35%;
-	width: 408px;
-}
+		top: 12%;
+		left: 0%;
+		right: 0;
+		width: 408px;
+	}
 }
 
 /* ------------MEDIA DESCTOP MODAL------------ */
@@ -1080,7 +1078,7 @@ input[type="checkbox"]:checked + .form_checkbox > .privacy_policy_checkbox {
 	display: none;
 	position: fixed;
 	top: 0%;
-	left:1%;
+	left: 1%;
 	width: 100%;
 	height: 100%;
 	padding: 72px 40px 72px 16px;
