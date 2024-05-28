@@ -335,6 +335,11 @@ img {
 		font-size: 56px;
 		margin-bottom: 36px;
 	}
+
+	.hero {
+		
+		padding: 112px 0;
+	}
 }
 
 /* ------------MEDIA TABLET ORDER BLOCK------------ */
