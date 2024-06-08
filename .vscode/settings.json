@@ -1,0 +1,5 @@
+{
+	"editor.maxTokenizationLineLength": 500,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.wordWrapColumn": 20
+}
