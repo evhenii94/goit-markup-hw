@@ -902,7 +902,7 @@ img {
 
 .modal_overlay {
 	display: none;
-	position: absolute;
+	position: fixed;
 	overflow-y: visible;
 	top: 0;
 	left: 0;
@@ -915,7 +915,7 @@ img {
 }
 
 .modal-container {
-	position: fixed;
+	position: absolute;
 	top: 4%;
 	left: 0%;
 	right: 0;
