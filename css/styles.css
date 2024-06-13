@@ -533,6 +533,10 @@ img {
 /* ------------MEDIA TABLET TEAM BLOCK------------ */
 
 @media screen and (min-width: 768px) {
+	.team_photo {
+		width: 100%;
+	}
+
 	.our_team_wrapper {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -845,6 +849,7 @@ img {
 		flex-direction: row;
 		flex-wrap: wrap;
 		gap: 24px;
+		padding-left: 108px;
 	}
 
 	.logo_footer {
@@ -881,8 +886,9 @@ img {
 @media screen and (min-width: 1158px) {
 	.footer_container {
 		flex-direction: row;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		gap: 0;
+		padding-left: 0;
 	}
 
 	.footer_block {
